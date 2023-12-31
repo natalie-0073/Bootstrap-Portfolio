@@ -4,3 +4,32 @@
 .card{
     border: none;
 }
+.md-150{
+    max-width: 150px;
+}
+hr{
+    margin: 0;
+}
+.photo{
+    width: 200px;
+    height: 200px;
+    margin-left: 25%;
+}
+.icons{
+    flex-direction: row;
+    
+    max-width: 20%;
+    margin: 2% auto;
+}
+.icon-pics{
+    max-width: 50px;
+    display: block;
+}
+a{
+    display: block;
+}
+@media(max-width:1200px){
+    .icons{
+        max-width: 50%;
+    }
+}

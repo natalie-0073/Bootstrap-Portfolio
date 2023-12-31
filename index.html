@@ -8,8 +8,8 @@
     <title>Bootstrap Portfolio</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-5" data-bs-theme="dark">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-5 fixed-top" data-bs-theme="dark">
+        <div class="container-fluid px-0">
           <a class="navbar-brand" href="#">My portfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -20,13 +20,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Welcome</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -35,40 +35,113 @@
       
       <div class="container-fluid text-bg-secondary p-7">
         <h1 class="display-5 fw-bold">Welcome to My Portfolio!</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+        <p class="col-md-8 fs-4">Dive into a collection of my projects and accomplishments.</p>
+        <button class="btn btn-primary btn-lg" type="button">Let's go!</button>
       </div>
       
-      <div class="container-fluid p-5">
-        <h2>My Skills</h2>
+      <div class="container-fluid px-5 py-3">
+        <h2 class="pb-4">My Skills</h2>
         <div class="row">
               <div class="card" style="width: 18rem;">
-                <img src="images/html-pic.webp" class="card-img-top" alt="...">
+                <img src="images/html-pic.png" class="card-img-top md-150" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Heading</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">View Details >></a>
+                  <h5 class="card-title">HTML5</h5>
+                  <p class="card-text">Backbone of modern web development. With its advanced features and enhanced semantic elements, HTML5 enables the seamless integration of multimedia, improved accessibility, and responsive designs across various devices.</p>
+                  <a href="https://en.wikipedia.org/wiki/HTML5#:~:text=HTML5%20(Hypertext%20Markup%20Language%205,as%20the%20HTML%20Living%20Standard." target="_blank" class="btn btn-primary">View Details >></a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
-                <img src="images/css-pic.png" class="card-img-top" alt="...">
+                <img src="images/css-pic.png" class="card-img-top md-150" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Heading</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">View Details >></a>
+                  <h5 class="card-title">CSS 3</h5>
+                  <p class="card-text">Revolutionized web styling by introducing a wide array of innovative features and capabilities. From sleek animations, transitions, and gradients to flexible layouts and responsive designs, CSS3 empowers developers to create visually stunning and dynamic web interfaces.</p>
+                  <a href="https://en.wikipedia.org/wiki/CSS"target="_blank" class="btn btn-primary">View Details >></a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
-                <img src="images/js-pic.png" class="card-img-top" alt="...">
+                <img src="images/js-pic.png" class="card-img-top md-150" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Heading</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">View Details >></a>
+                  <h5 class="card-title">JavaScript</h5>
+                  <p class="card-text">The dynamic scripting language, empowers web development by adding interactivity and functionality to websites. As the cornerstone of modern web applications, JavaScript enables responsive designs, interactive elements, and seamless user experiences.</p>
+                  <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="btn btn-primary">View Details >></a>
                 </div>
               </div>
         </div>
+      
+        <div class="container-fluid p-0"id="work">
+          <h2 class="py-5">My Work</h2>
+          <div class="row">
+            <div class="col-md-4 pb-5">
+              <img src="images/02-hero-bg.jpg" class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-8 pb-5">
+              <h3>Project 1</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quis dolore ipsa repellendus quam ad maiores consequuntur animi nesciunt, aperiam ipsum in ex earum numquam temporibus dolorem sint aliquam maxime!</p>
+              <button type="button" class="btn btn-primary">View Project</button>
+            </div>
+            <div class="col-md-4 pb-5">
+              <img src="images/02-portfolio-1.jpg" class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-8">
+              <h3>Project 2</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quis dolore ipsa repellendus quam ad maiores consequuntur animi nesciunt, aperiam ipsum in ex earum numquam temporibus dolorem sint aliquam maxime!</p>
+              <button type="button" class="btn btn-primary">View Project</button>
+            </div>
+            <div class="col-md-4 py-5">
+              <img src="images/02-portfolio-2.jpg" class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-8 py-5">
+              <h3>Project 3</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quis dolore ipsa repellendus quam ad maiores consequuntur animi nesciunt, aperiam ipsum in ex earum numquam temporibus dolorem sint aliquam maxime!</p>
+              <button type="button" class="btn btn-primary">View Project</button>
+            </div>
+            <div class="col-md-4 pb-5">
+              <img src="images/02-portfolio-3.jpg" class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-8 pb-5">
+              <h3>Project 4</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quis dolore ipsa repellendus quam ad maiores consequuntur animi nesciunt, aperiam ipsum in ex earum numquam temporibus dolorem sint aliquam maxime!</p>
+              <button type="button" class="btn btn-primary">View Project</button>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="h-100 p-5 text-bg-secondary border" id="about">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>About me!</h2>
+              <p>I'm an aspiring frontend developer fueled by a passion for transforming concepts into captivating
+                digital landscapes. Armed with a toolkit of HTML, CSS, and JavaScript, I embark on a journey of
+                crafting immersive user interfaces. Constantly exploring new trends and technologies, I eagerly
+                embrace challenges, seeing each one as an opportunity to refine my skills and push boundaries. My
+                goal is to create intuitive, responsive designs that resonate with users, leaving a lasting
+                impression in the digital realm.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/photo_2022-03-13_21-25-46.jpg" class="img-fluid photo rounded-circle">
+            </div>
+          </div>
+          
+          <button class="btn btn-outline-light" type="button">Download My Resume</button>
+        </div>
+<div class="row icons justify-content-center align-items-center" id="contact">
+  <div class="col icon-1">
+    <a href="https://www.linkedin.com/in/nataliia-chala0073/" target="_blank"> <img src="images/in-logo.webp" alt="" class="icon-pics"></a>
+   
+  </div>
+    <div class="col">
+      <a href="https://twitter.com/?lang=en"target="_blank"><img src="images/twitter.png" alt=""class="icon-pics"></a>
+    
+  </div>
+    <div class="col  icon-3">
+      <a href="https://github.com/natalie-0073" target="_blank"> <img src="images/github.png" alt=""class="icon-pics"></a>
+   
+  </div>
+</div>
       </div>
+    
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </body>
 </html>
